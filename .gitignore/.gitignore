@@ -6,4 +6,8 @@ venv
 venv/*
 graph
 graph/*
+./.DS_Store
+.DS_Store/*
+./**/.DS_Store/*
+ex4/*.zip
 
