@@ -2,3 +2,7 @@
 .git
 .vs_code
 __pycache__
+.ipynb_checkpoints
+events.out.*
+*.npz
+VGG16
