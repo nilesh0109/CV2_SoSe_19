@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import tensorflow as tf
-
+import re
 """
 unpickle function from CIFAR-10 website
 """
@@ -136,21 +136,21 @@ with tf.Session() as sess:
 	writer = tf.summary.FileWriter(logdir="./", graph=sess.graph)
 	sess.run(tf.global_variables_initializer())
 	# Instead of running initializer, we could load a checkpoint:
-	# saver.restore(sess, './my-model-9999')
-	for batch in range(300):
-		idx = np.random.choice(train_data.shape[0], batchsize, replace=False) # sample random indices
-		_, l, a, batch_acc, batch_loss = sess.run([minimize_op, loss_summary, accuracy_summary, accuracy, loss], 
-			feed_dict={input_images: train_data[idx,...], labels: train_labels[idx]})
+	#saver.restore(sess, './my-model-299')
+	# for batch in range(300):
+	# 	idx = np.random.choice(train_data.shape[0], batchsize, replace=False) # sample random indices
+	# 	_, l, a, batch_acc, batch_loss = sess.run([minimize_op, loss_summary, accuracy_summary, accuracy, loss], 
+	# 		feed_dict={input_images: train_data[idx,...], labels: train_labels[idx]})
 
-		writer.add_summary(l, global_step=batch)
-		writer.add_summary(a, global_step=batch)
-		if batch % 100 == 0:
-			print('Batch {:d} done: batch loss {:f}, batch accuracy {:f}'.format(batch, batch_loss, batch_acc))
+	# 	writer.add_summary(l, global_step=batch)
+	# 	writer.add_summary(a, global_step=batch)
+	# 	if batch % 100 == 0:
+	# 		print('Batch {:d} done: batch loss {:f}, batch accuracy {:f}'.format(batch, batch_loss, batch_acc))
 
 
 	# run testing in smaller batches so we don't run out of memory.
 	test_batch_size = 100
-	num_test_batches = test_data.shape[0]/test_batch_size
+	num_test_batches = int(test_data.shape[0]/test_batch_size)
 	test_losses = []
 	test_accs = []
 	for test_batch in range(num_test_batches):
