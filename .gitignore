@@ -1,8 +1,9 @@
 .DS_Store
 .git
-.vs_code
+.vscode
 __pycache__
 .ipynb_checkpoints
 events.out.*
 *.npz
 VGG16
+checkpoint
