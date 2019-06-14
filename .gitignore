@@ -7,3 +7,5 @@ events.out.*
 *.npz
 VGG16
 checkpoint
+CKPT
+Archive.zip
