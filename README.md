@@ -10,3 +10,6 @@ Training a simple convolutional neural network on CIFAR-10 dataset.
 
 ### [Exercise 4](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex4/ex04.py)
 Transfer Learning using VGG16(Trained on ImageNet 1000 classes) to train the classifer on CIFAR-10 classes.
+
+### [Exercise 5](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex5/ex5.py)
+Training the CNN for saliency output(essentially image output). using the [ML-Net](https://github.com/marcellacornia/mlnet) weighted loss function for efficient learning.
