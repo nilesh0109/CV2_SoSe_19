@@ -14,5 +14,5 @@ Transfer Learning using VGG16(Trained on ImageNet 1000 classes) to train the cla
 ### [Exercise 5](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex5/ex5.py)
 Training the CNN for saliency output(essentially image output). using the [ML-Net](https://github.com/marcellacornia/mlnet) weighted loss function for efficient learning.
 
-### [Exercise 5](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex6/ex6.py)
+### [Exercise 6](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex6/ex6.py)
 Add Regularization in the model created in ex5 to avoid overfitting 
