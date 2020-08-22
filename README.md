@@ -1,5 +1,8 @@
+### [Project--Saliency System](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/Saliency%20System/saliency_system.py)
+Build a saliency prediction system using the 1200 training saliency images. The architecture used is similar to [ML-Net](https://github.com/marcellacornia/mlnet).
+
 # CV2_SoSe_19
-Repo for maintaining CV2 exercies
+Repo for maintaining CV2 coursework and project
 
 ### [Exercise 2](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex2/ex2.py)
 Training a simple Neural network for linear regression task.
@@ -16,6 +19,3 @@ Training the CNN for saliency output(essentially image output). using the [ML-Ne
 
 ### [Exercise 6](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/ex6/ex6.py)
 Add Regularization in the model created in ex5 to avoid overfitting 
-
-### [Project--Saliency System](https://github.com/nilesh0109/CV2_SoSe_19/blob/master/Saliency%20System/saliency_system.py)
-Build a saliency prediction system using the 1200 training saliency images. The architecture used is similar to [ML-Net](https://github.com/marcellacornia/mlnet).
